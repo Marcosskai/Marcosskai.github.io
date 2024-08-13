@@ -6,6 +6,9 @@ export function App() {
   const buttonTextLinkedin = "Linkedin"; 
   const iconPathLinkedin = "/styles/icons/icon-linkedin.png"; 
   const meIcon = "/styles/icons/me.png"
+  const gitIcon = "/styles/icons/icon-github.png";
+  const linkUrlGitHub = "https://github.com/Marcosskai"
+  const buttonTextGitHub = "GitHub"
 
   return (
     <main className="flex flex-col items-center justify-center min-h-screen">
@@ -29,6 +32,12 @@ export function App() {
           <button className="px-6 py-1.5 bg-zinc-950 text-white border flex items-center gap-2 hover:bg-blue-700 transition-colors duration-200">
             <img src={iconPathLinkedin} alt="Linkedin Icon" className="w-5 h-5" />
             {buttonTextLinkedin}
+          </button>
+        </a>
+        <a href={linkUrlGitHub} target="_blank" rel="noopener noreferrer">
+          <button className="px-8 py-1.5 bg-zinc-950 text-white border flex items-center gap-2 hover:bg-zinc-300 transition-colors duration-200">
+            <img src={gitIcon} alt="Linkedin Icon" className="w-5 h-5 bg-zinc-50" />
+            {buttonTextGitHub}
           </button>
         </a>
       </div>
