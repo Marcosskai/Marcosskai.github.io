@@ -1,14 +1,15 @@
 import { MapPin } from 'lucide-react';
+import iconPathWhatsApp from "/styles/icons/icon-whatsapp.png"; 
+import iconPathLinkedin from "/styles/icons/icon-linkedin.png"; 
+import gitIcon from "/styles/icons/icon-github.png";
+import meIcon from "/styles/icons/me.png";
+
 
 export function App() {
   const linkUrlWhatsApp = "https://wa.me/5562981958251"; 
   const buttonTextWhatsApp = "WhatsApp";
-  const iconPathWhatsApp = "/styles/icons/icon-whatsapp.png"; 
   const linkUrlLinkedin = "https://www.linkedin.com/in/marcos-gabriel-866182303/";
   const buttonTextLinkedin = "Linkedin"; 
-  const iconPathLinkedin = "/styles/icons/icon-linkedin.png"; 
-  const meIcon = "/styles/icons/me.png";
-  const gitIcon = "/styles/icons/icon-github.png";
   const linkUrlGitHub = "https://github.com/Marcosskai";
   const buttonTextGitHub = "GitHub";
 
