@@ -10,8 +10,12 @@ export function App() {
   return (
     <main className="flex flex-col items-center justify-center min-h-screen">
       <div className="mb-4">
-        <img src={meIcon} alt="Me Icon" className="w-64 h-64" />
-      </div>
+      <img
+        src={meIcon}
+        alt="Me Icon"
+        className="w-64 h-64 rounded-full border-2 border-zinc-700"
+      />
+    </div>
   
       <div className="flex justify-center items-center gap-4">
         <a href={linkUrlWhatsApp} target="_blank" rel="noopener noreferrer">
