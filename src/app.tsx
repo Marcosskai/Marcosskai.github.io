@@ -10,12 +10,13 @@ export function App() {
   return (
     <main className="flex flex-col items-center justify-center min-h-screen">
       <div className="mb-4">
-      <img
-        src={meIcon}
-        alt="Me Icon"
-        className="w-64 h-64 rounded-full border-2 border-zinc-700"
-      />
-    </div>
+        <img
+          src={meIcon}
+          alt="Me Icon"
+          className="w-64 h-64 rounded-full border-2 border-zinc-700"
+        />
+        <h1 className="flex items-center justify-center mt-6 font-medium text-zinc-400">Marcos Gabriel</h1>
+      </div>
   
       <div className="flex justify-center items-center gap-4">
         <a href={linkUrlWhatsApp} target="_blank" rel="noopener noreferrer">
@@ -33,5 +34,4 @@ export function App() {
       </div>
     </main>
   );
-    
 }
