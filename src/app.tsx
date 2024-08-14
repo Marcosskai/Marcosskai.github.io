@@ -30,19 +30,16 @@ export function App() {
         <div className="flex justify-center items-center gap-4">
           <a href={linkUrlWhatsApp} target="_blank" rel="noopener noreferrer">
             <button className="px-4 py-1.5 bg-zinc-950 text-white border flex items-center gap-2 hover:bg-green-700 transition-colors duration-200">
-              <img src={iconPathWhatsApp} alt="WhatsApp Icon" className="w-5 h-5" />
               {buttonTextWhatsApp}
             </button>
           </a>
           <a href={linkUrlLinkedin} target="_blank" rel="noopener noreferrer">
             <button className="px-6 py-1.5 bg-zinc-950 text-white border flex items-center gap-2 hover:bg-blue-700 transition-colors duration-200">
-              <img src={iconPathLinkedin} alt="Linkedin Icon" className="w-5 h-5" />
               {buttonTextLinkedin}
             </button>
           </a>
           <a href={linkUrlGitHub} target="_blank" rel="noopener noreferrer">
-            <button className="px-8 py-1.5 bg-zinc-950 text-white border flex items-center gap-2 hover:bg-zinc-300 transition-colors duration-200">
-              <img src={gitIcon} alt="GitHub Icon" className="w-5 h-5 bg-zinc-50" />
+            <button className="px-8 py-1.5 bg-zinc-950 text-white border flex items-center gap-2 hover:bg-zinc-300 transition-colors duration-200 hover:text-zinc-950">
               {buttonTextGitHub}
             </button>
           </a>
