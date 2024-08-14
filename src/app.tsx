@@ -51,6 +51,7 @@ export function App() {
           <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-zinc-500" />
           Goiânia - Goiás
         </span>
+        <p className='text-zinc-500'>Esse site é responsivo</p>
       </div>
     </main>
   );
