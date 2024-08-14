@@ -20,7 +20,7 @@ export function App() {
           className="w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 rounded-full border-2 border-zinc-700"
         />
         <h1 className="mt-4 sm:mt-6 md:mt-8 font-medium text-zinc-300 text-center text-sm sm:text-lg md:text-xl">
-          Marcos Gabriel - Software Developer (Atualmente estudando React)
+          Marcos Gabriel - FrontEnd Developer (Atualmente estudando React)
         </h1>
       </div>
 
