@@ -24,7 +24,7 @@ export function App() {
       </h1>
     </div>
 
-    <div className="flex flex-col items-center space-y-6">
+    <div className="flex flex-col items-center space-y-8">
       <div className="flex justify-center items-center gap-4">
         <a href={linkUrlWhatsApp} target="_blank" rel="noopener noreferrer">
           <button className="px-4 py-1.5 bg-zinc-950 text-white border flex items-center gap-2 hover:bg-green-700 transition-colors duration-200">
