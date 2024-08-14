@@ -12,7 +12,7 @@ export function App() {
   const buttonTextInstagram = "Instagram";
 
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen space-y-8 px-4">
+    <main className="flex flex-col items-center justify-center min-h-screen space-y-9 px-4">
       <div className="flex flex-col items-center">
         <img
           src={meIcon}
