@@ -19,7 +19,7 @@ export function App() {
         alt="Me Icon"
         className="w-64 h-64 rounded-full border-2 border-zinc-700"
       />
-      <h1 className="mt-6 font-medium text-zinc-300 text-center">
+      <h1 className="mt-8 font-medium text-zinc-300 text-center">
         Marcos Gabriel - Software Developer (Junior)
       </h1>
     </div>
