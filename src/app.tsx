@@ -37,7 +37,7 @@ export function App() {
             </button>
           </a>
           <a href={linkUrlGitHub} target="_blank" rel="noopener noreferrer">
-            <button className="px-8 py-1.5 bg-zinc-950 text-white border flex items-center gap-2 hover:bg-zinc-300 transition-colors duration-200 hover:text-zinc-950">
+            <button className="px-7 py-1.5 bg-zinc-950 text-white border flex items-center gap-2 hover:bg-zinc-300 transition-colors duration-200 hover:text-zinc-950">
               {buttonTextGitHub}
             </button>
           </a>
