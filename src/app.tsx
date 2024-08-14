@@ -49,7 +49,7 @@ export function App() {
       </div>
       <span className="flex items-center gap-2 text-zinc-300">
         <MapPin className="w-5 h-5 text-zinc-500" />
-        Goiânia
+        Goiânia - Goiás
       </span>
     </div>
     </main>
