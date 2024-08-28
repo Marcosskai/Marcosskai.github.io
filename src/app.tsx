@@ -10,6 +10,8 @@ export function App() {
   const buttonTextGitHub = "GitHub";
   const linkUrlInstagram = "https://www.instagram.com/og.mrcos/";
   const buttonTextInstagram = "Instagram";
+  const linkUrlSpotify = "https://open.spotify.com/playlist/0cnHkx0WFzxnLUxdrVLrUB?si=82bee3083f324523";
+  const buttonTextSpotify = "Spotify";
 
   return (
     <main className="flex flex-col items-center justify-center min-h-screen space-y-9 px-4">
@@ -44,6 +46,11 @@ export function App() {
           <a href={linkUrlInstagram} target="_blank" rel="noopener noreferrer">
             <button className="w-full sm:w-auto px-4 py-1.5 bg-zinc-950 text-white border flex items-center justify-center gap-2 hover:bg-pink-700 transition-colors duration-200">
               {buttonTextInstagram}
+            </button>
+          </a>
+          <a href={linkUrlSpotify} target="_blank" rel="noopener noreferrer">
+            <button className="w-full sm:w-auto px-7 py-1.5 bg-zinc-950 text-white border flex items-center justify-center gap-2 hover:bg-green-700 transition-colors duration-200">
+              {buttonTextSpotify}
             </button>
           </a>
         </div>
