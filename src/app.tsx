@@ -23,8 +23,8 @@ export function App() {
       <Image
         src={meIcon}
         alt="Me Icon"
-        width={{ base: '20', md: '64' }} 
-        height={{base: "20", 'md': '64' }}
+        width={{ base: '20', md: '56' }} 
+        height={{base: "20", 'md': '56' }}
         borderRadius="full"
         borderWidth="2px"
         borderColor="zinc.700"
