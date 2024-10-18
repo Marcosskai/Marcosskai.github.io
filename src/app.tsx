@@ -1,7 +1,9 @@
+// src/App.js
 import { MapPin } from 'lucide-react';
 import meIcon from "/styles/icons/me.png";
-import react from "/styles/icons/react.png"
+import react from "/styles/icons/react.png";
 import { Flex, Image } from '@chakra-ui/react';
+import Navbar from './navbar';
 
 export function App() {
   const linkUrlWhatsApp = "https://wa.me/5562981958251";
@@ -17,39 +19,35 @@ export function App() {
 
   return (
     <main className="flex flex-col items-center justify-center min-h-screen space-y-9 px-4 bg-slate-900">
-      <div className="flex flex-col items-center">
-
-      <Flex align="center" gap={4}>
-      <Image
-        src={meIcon}
-        alt="Me Icon"
-        width={{ base: '20', md: '56' }} 
-        height={{base: "20", 'md': '56' }}
-        borderRadius="full"
-        borderWidth="2px"
-        borderColor="zinc.700"
-  />
-
-        <Image 
-        src={react} 
-        alt="react" 
-        width={{ base: '28', md: '64' }} 
-        height={{base: "28", 'md': '64' }}
-        borderRadius="full"
-        />
+      <Navbar/>
+      <div className="flex flex-col items-center mt={4}"> 
+        <Flex align="center" gap={4}>
+          <Image
+            src={meIcon}
+            alt="Me Icon"
+            width={{ base: '20', md: '56' }} 
+            height={{ base: '20', md: '56' }}
+            borderRadius="full"
+            borderWidth="2px"
+            borderColor="zinc.700"
+          />
+          <Image 
+            src={react} 
+            alt="react" 
+            width={{ base: '28', md: '64' }} 
+            height={{ base: '28', md: '64' }}
+            borderRadius="full"
+          />
         </Flex>
 
         <h1 className="flex gap-2 mt-4 sm:mt-6 md:mt-8 font-medium text-zinc-300 text-center text-sm sm:text-lg md:text-xl">
           Marcos Gabriel - FrontEnd Developer - 
-          
-        <a href="https://react.dev/" target="_blank" rel="noopener noreferrer">
-           <p className='text-sky-400 border-b-2 border-sky-400 hover:text-sky-300 transition duration-300'>
-            React
-           </p>
-        </a>
-      </h1>
-
-
+          <a href="https://react.dev/" target="_blank" rel="noopener noreferrer">
+            <p className='text-sky-400 border-b-2 border-sky-400 hover:text-sky-300 transition duration-300'>
+              React
+            </p>
+          </a>
+        </h1>
       </div>
 
       <div className="flex flex-col items-center space-y-6 sm:space-y-8">
@@ -60,7 +58,7 @@ export function App() {
             </button>
           </a>
           <a href={linkUrlLinkedin} target="_blank" rel="noopener noreferrer">
-            <button className="w-full sm:w-auto rounded-md px-6 py-1.5 bg-blue-800 hover:bg-blue-950 text-white border-none flex items-center justify-center gap-2  transition-colors duration-200">
+            <button className="w-full sm:w-auto rounded-md px-6 py-1.5 bg-blue-800 hover:bg-blue-950 text-white border-none flex items-center justify-center gap-2 transition-colors duration-200">
               {buttonTextLinkedin}
             </button>
           </a>
