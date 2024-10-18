@@ -14,42 +14,50 @@ export function App() {
   const buttonTextSpotify = "Spotify";
 
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen space-y-9 px-4">
+    <main className="flex flex-col items-center justify-center min-h-screen space-y-9 px-4 bg-slate-900">
       <div className="flex flex-col items-center">
         <img
           src={meIcon}
           alt="Me Icon"
           className="w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 rounded-full border-2 border-zinc-700"
         />
-        <h1 className="mt-4 sm:mt-6 md:mt-8 font-medium text-zinc-300 text-center text-sm sm:text-lg md:text-xl">
-          Marcos Gabriel - FrontEnd Developer (Atualmente estudando React)
+        <h1 className="flex gap-2 mt-4 sm:mt-6 md:mt-8 font-medium text-zinc-300 text-center text-sm sm:text-lg md:text-xl">
+          Marcos Gabriel - FrontEnd Developer - 
+          
+        <a href="https://react.dev/" target="_blank" rel="noopener noreferrer">
+           <p className='text-sky-400 border-b-2 border-sky-400 hover:text-sky-300 transition duration-300'>
+            React
+           </p>
+        </a>
+
+
         </h1>
       </div>
 
       <div className="flex flex-col items-center space-y-6 sm:space-y-8">
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4 flex-wrap">
           <a href={linkUrlWhatsApp} target="_blank" rel="noopener noreferrer">
-            <button className="w-full sm:w-auto px-4 py-1.5 bg-zinc-950 text-white border flex items-center justify-center gap-2 hover:bg-green-700 transition-colors duration-200">
+            <button className="w-full sm:w-auto rounded-md px-4 py-1.5 bg-blue-800 hover:bg-blue-950 text-white border-none flex items-center justify-center gap-2 transition-colors duration-200">
               {buttonTextWhatsApp}
             </button>
           </a>
           <a href={linkUrlLinkedin} target="_blank" rel="noopener noreferrer">
-            <button className="w-full sm:w-auto px-6 py-1.5 bg-zinc-950 text-white border flex items-center justify-center gap-2 hover:bg-blue-700 transition-colors duration-200">
+            <button className="w-full sm:w-auto rounded-md px-6 py-1.5 bg-blue-800 hover:bg-blue-950 text-white border-none flex items-center justify-center gap-2  transition-colors duration-200">
               {buttonTextLinkedin}
             </button>
           </a>
           <a href={linkUrlGitHub} target="_blank" rel="noopener noreferrer">
-            <button className="w-full sm:w-auto px-7 py-1.5 bg-zinc-950 text-white border flex items-center justify-center gap-2 hover:bg-zinc-300 transition-colors duration-200 hover:text-zinc-950">
+            <button className="w-full sm:w-auto rounded-md px-7 py-1.5 bg-blue-800 hover:bg-blue-950 text-white border-none flex items-center justify-center gap-2 transition-colors duration-200">
               {buttonTextGitHub}
             </button>
           </a>
           <a href={linkUrlInstagram} target="_blank" rel="noopener noreferrer">
-            <button className="w-full sm:w-auto px-4 py-1.5 bg-zinc-950 text-white border flex items-center justify-center gap-2 hover:bg-pink-700 transition-colors duration-200">
+            <button className="w-full sm:w-auto rounded-md px-4 py-1.5 bg-blue-800 hover:bg-blue-950 text-white border-none flex items-center justify-center gap-2 transition-colors duration-200">
               {buttonTextInstagram}
             </button>
           </a>
           <a href={linkUrlSpotify} target="_blank" rel="noopener noreferrer">
-            <button className="w-full sm:w-auto px-7 py-1.5 bg-zinc-950 text-white border flex items-center justify-center gap-2 hover:bg-green-700 transition-colors duration-200">
+            <button className="w-full sm:w-auto rounded-md px-7 py-1.5 bg-blue-800 hover:bg-blue-950 text-white border-none flex items-center justify-center gap-2 transition-colors duration-200">
               {buttonTextSpotify}
             </button>
           </a>
