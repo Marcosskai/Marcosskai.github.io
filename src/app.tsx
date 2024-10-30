@@ -1,89 +1,41 @@
-// src/App.js
-import { MapPin } from 'lucide-react';
-import meIcon from "/styles/icons/me.png";
-import react from "/styles/icons/react.png";
-import { Flex, Image } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 import Navbar from './navbar';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer'; 
+import {Home} from './home'
 
 export function App() {
-  const linkUrlWhatsApp = "https://wa.me/5562981958251";
-  const buttonTextWhatsApp = "WhatsApp";
-  const linkUrlLinkedin = "https://www.linkedin.com/in/marcos-gabriel-866182303/";
-  const buttonTextLinkedin = "Linkedin";
-  const linkUrlGitHub = "https://github.com/Marcosskai";
-  const buttonTextGitHub = "GitHub";
-  const linkUrlInstagram = "https://www.instagram.com/og.mrcos/";
-  const buttonTextInstagram = "Instagram";
-  const linkUrlSpotify = "https://open.spotify.com/playlist/0cnHkx0WFzxnLUxdrVLrUB?si=82bee3083f324523";
-  const buttonTextSpotify = "Spotify";
+  const { ref, inView } = useInView({
+    threshold: 0.1, 
+    triggerOnce: true, 
+  });
 
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen space-y-9 px-4 bg-slate-900">
-      <Navbar/>
-      <div className="flex flex-col items-center mt={4}"> 
-        <Flex align="center" gap={4}>
-          <Image
-            src={meIcon}
-            alt="Me Icon"
-            width={{ base: '20', md: '56' }} 
-            height={{ base: '20', md: '56' }}
-            borderRadius="full"
-            borderWidth="2px"
-            borderColor="zinc.700"
-          />
-          <Image 
-            src={react} 
-            alt="react" 
-            width={{ base: '28', md: '64' }} 
-            height={{ base: '28', md: '64' }}
-            borderRadius="full"
-          />
-        </Flex>
-
-        <h1 className="flex gap-2 mt-4 sm:mt-6 md:mt-8 font-medium text-zinc-300 text-center text-sm sm:text-lg md:text-xl">
-          Marcos Gabriel - FrontEnd Developer - 
-          <a href="https://react.dev/" target="_blank" rel="noopener noreferrer">
-            <p className='text-sky-400 border-b-2 border-sky-400 hover:text-sky-300 transition duration-300'>
-              React
-            </p>
-          </a>
-        </h1>
+    <main className="bg-slate-900">
+      <div className="flex flex-col items-center justify-center h-screen space-y-9 px-4">
+        <Navbar />
+        <Home/>
       </div>
-
-      <div className="flex flex-col items-center space-y-6 sm:space-y-8">
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-4 flex-wrap">
-          <a href={linkUrlWhatsApp} target="_blank" rel="noopener noreferrer">
-            <button className="w-full sm:w-auto rounded-md px-4 py-1.5 bg-blue-800 hover:bg-blue-950 text-white border-none flex items-center justify-center gap-2 transition-colors duration-200">
-              {buttonTextWhatsApp}
-            </button>
-          </a>
-          <a href={linkUrlLinkedin} target="_blank" rel="noopener noreferrer">
-            <button className="w-full sm:w-auto rounded-md px-6 py-1.5 bg-blue-800 hover:bg-blue-950 text-white border-none flex items-center justify-center gap-2 transition-colors duration-200">
-              {buttonTextLinkedin}
-            </button>
-          </a>
-          <a href={linkUrlGitHub} target="_blank" rel="noopener noreferrer">
-            <button className="w-full sm:w-auto rounded-md px-7 py-1.5 bg-blue-800 hover:bg-blue-950 text-white border-none flex items-center justify-center gap-2 transition-colors duration-200">
-              {buttonTextGitHub}
-            </button>
-          </a>
-          <a href={linkUrlInstagram} target="_blank" rel="noopener noreferrer">
-            <button className="w-full sm:w-auto rounded-md px-4 py-1.5 bg-blue-800 hover:bg-blue-950 text-white border-none flex items-center justify-center gap-2 transition-colors duration-200">
-              {buttonTextInstagram}
-            </button>
-          </a>
-          <a href={linkUrlSpotify} target="_blank" rel="noopener noreferrer">
-            <button className="w-full sm:w-auto rounded-md px-7 py-1.5 bg-blue-800 hover:bg-blue-950 text-white border-none flex items-center justify-center gap-2 transition-colors duration-200">
-              {buttonTextSpotify}
-            </button>
-          </a>
-        </div>
-        <span className="flex items-center gap-2 text-zinc-300">
-          <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-zinc-500" />
-          Goiânia - Goiás
-        </span>
-        <p className='text-zinc-500'>Criei esse site para treinar responsividade</p>
-      </div>
+      <section className="relative flex flex-col items-center justify-center w-full h-[500px] bg-slate-800 -mt-28">
+        < Box
+          className="absolute top-0 left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-[20px] border-l-transparent border-r-[20px] border-r-transparent border-t-[20px] border-t-slate-900">
+        </Box>
+  
+      <p className="text-zinc-500 relative -top-36">
+        Criei esse site para treinar responsividade
+      </p>
+      
+      <motion.div
+        className="text-center text-zinc-100"
+        ref={ref}
+        initial={{ opacity: 0, y: 50 }}
+        animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+        transition={{ duration: 0.8 }}
+      >
+          <h2 className="text-2xl sm:text-3xl font-semibold mb-4">PROJETOS</h2>
+          <p className="text-md sm:text-lg text-zinc-100">Alguns componentes que já fiz</p>
+      </motion.div>
+    </section>
     </main>
   );
 }
