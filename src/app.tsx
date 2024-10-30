@@ -33,7 +33,7 @@ export function App() {
         transition={{ duration: 0.8 }}
       >
           <h2 className="text-2xl sm:text-3xl font-semibold mb-4">PROJETOS</h2>
-          <p className="text-md sm:text-lg text-zinc-100">Alguns componentes que já fiz</p>
+          <p className="text-md sm:text-lg text-zinc-500">Ainda vou colocar alguns projetos na proxima atualização desse site</p>
       </motion.div>
     </section>
     </main>
